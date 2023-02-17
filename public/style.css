@@ -1,3 +1,13 @@
+:root {
+  --very-dark-blue:  #12283a;
+  --dark-blue:       #145d83;
+  --blue:            #1f9dd9;
+  --light-blue:      #20dbd8;
+  --transparant:       #0000;
+  --shadow: .3rem;
+  --rounded: .5rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,6 +20,50 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  background: linear-gradient(to right bottom, var(--very-dark-blue), var(--dark-blue),
+    var(--blue), var(--light-blue));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 > abbr {
+  padding: 0 1rem calc(1rem + var(--shadow))var(--shadow);
+  width: fit-content;
+  background: var(--transparant);
+  border-bottom-right-radius: var(--rounded);
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1>abbr:before {
+  content: "";
+  width: var(--rounded);
+  height: calc(2*var(--rounded));
+  border-top-left-radius: var(--rounded);
+  background-color: #0000;
+  position: absolute;
+}
+
+h1>abbr>span {
+  border: 1px solid var(--light-blue);
+  border-radius: var(--rounded);
+  box-shadow: calc(-1*var(--shadow))var(--shadow)0 0 var(--light-blue);
+  color: var(--LI);
+  text-transform: lowercase;
+  padding: 0.5rem 1.2rem;
+  font-size: 2rem;
+  display: block;
+}
+
+body>header>h1>abbr:after {
+  content: "";
+  width: var(--rounded);
+  height: calc(2*var(--rounded));
+  border-top-left-radius: var(--rounded);
+  background-color: #0000;
+  position: absolute;
 }
 
 h1, h2{
@@ -19,6 +73,7 @@ h1, h2{
 h1{
   font-size: 3em;
   margin: 0;
+  color: white;
 }
 
 header{
@@ -44,6 +99,7 @@ main{
   width: 80%;
   margin: 0 auto;
   padding: 0 2em 0 2em;
+  border-radius: 1rem;
 }
 
 main > h2{
@@ -56,6 +112,7 @@ main section {
   gap: 1rem;
   justify-content: space-evenly;
 }
+
 
 article {
   position: relative;
@@ -81,7 +138,7 @@ article h2 {
 article img {
   height: 5rem;
   width: 5rem;
-  border-radius: 50%;
+  border-radius: 1em;
 }
 article a {
   position: absolute;
