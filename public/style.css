@@ -33,8 +33,8 @@ h1 > abbr {
   border-bottom-right-radius: var(--rounded);
   text-decoration: none;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: .5em;
+  left: .5em;
 }
 
 h1>abbr:before {
@@ -66,18 +66,23 @@ body>header>h1>abbr:after {
   position: absolute;
 }
 
-h1, h2{
+h1, h2, h3{
   text-align: center;
 }
 
-h1{
-  font-size: 3em;
+h1, h2{
+  font-size: 5em;
   margin: 0;
   color: white;
 }
 
+h2{
+padding-top: .3em;
+}
+
 header{
   height: 10em;
+  margin-bottom: 8em;
 }
 
 nav{
@@ -89,9 +94,30 @@ nav{
 ul{
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 1em;
   padding: 0;
   list-style: none;
+  background-color: var(--very-dark-blue);
+  border-radius: var(--rounded);
+  padding: 1em;
+}
+
+ul> li{
+  padding: 0 .7em;
+}
+
+ul> li> a{
+  color:  white;
+  text-decoration: none;
+  font-weight: bolder;
+  border: solid 3px var(--light-blue);
+  padding: 0 .7em;
+  border-radius: var(--rounded);
+}
+
+ul> li> a:hover{
+  color: black;
+  background: var(--light-blue);
 }
 
 main{
@@ -99,7 +125,7 @@ main{
   width: 80%;
   margin: 0 auto;
   padding: 0 2em 0 2em;
-  border-radius: 1rem;
+  border-radius: var(--rounded);
 }
 
 main > h2{
@@ -124,7 +150,7 @@ article {
 
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.06);
-  border-radius: 1rem;
+  border-radius: var(--rounded);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.8px);
   -webkit-backdrop-filter: blur(5.8px);
@@ -146,7 +172,7 @@ article a {
   left: 0;
   width: 10rem;
   height: 10rem;
-  border-radius: 2rem;
+  border-radius: var(--rounded);
   display: block;
 }
 

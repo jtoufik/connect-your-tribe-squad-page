@@ -1,7 +1,7 @@
 <%- include('./partials/head.ejs') %>
 
 <main>
-  <h2><%= squad.name %></h2>
+  <h3><%= squad.name %></h3>
 
   <section>
     <!-- Hier komen de members -->
@@ -12,7 +12,7 @@
       <% }else{ %>
       <img src="/assets/placeholder.svg" alt="Placeholder avatar" />
       <% } %>
-      <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
+      <h4><%= member.name %> <%= member.prefix %> <%= member.surname %></h4>
     </article>
     <% }) %>
   </section>
