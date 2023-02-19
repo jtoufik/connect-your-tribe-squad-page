@@ -4,16 +4,35 @@
   <h3><%= squad.name %></h3>
 
   <section>
-    <!-- Hier komen de members -->
+    <!-- Gekozen squad groep -->
     <% squad.members.forEach(member => { %>
-    <article>
-      <% if (member.avatar) { %>
-      <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
-      <% }else{ %>
-      <img src="/assets/placeholder.svg" alt="Placeholder avatar" />
-      <% } %>
-      <h4><%= member.name %> <%= member.prefix %> <%= member.surname %></h4>
-    </article>
+      <article>
+        <!-- Link naar github page-->
+        <a href="<%= " https://github.com/" + member.gitHubHandle %>" target="_blank">
+
+        <!-- Als de gebruiker geen avatar heeft komt hier een placeholder ervoor in de plaats -->
+        <% if (member.avatar) { %>
+        <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
+        <% }else{ %>
+        <img src="/assets/placeholder.svg" alt="Placeholder avatar" />
+        <% } %>
+
+        <div class="card-info">
+          <!-- Naam member -->
+          <h4>Naam: <%= member.name %> <%= member.surname %></h4>
+
+          <!-- Haalt de github handle van een member uit de API op. Mocht een member zijn of haar githubhandle niet
+            hebben ingevuld wordt deze vervangen met de tekst: Niet Ingesteld. -->
+          <% if(member.gitHubHandle) { %>
+            <p>
+              Github: <%= member.gitHubHandle %>
+            </p>
+            <% } else { %>
+              <p><span>Github: Niet Ingesteld</span></p>
+              <% } %>
+        </div>
+      </article>
+
     <% }) %>
   </section>
 </main>
