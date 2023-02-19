@@ -154,7 +154,8 @@ main section {
 article {
   position: relative;
   min-width: 16rem;
-  height: 27.5rem;
+  width: 19rem;
+  max-height: 27.5rem;
   padding: .5rem;
   text-align: center;
   margin-bottom: .5rem;
@@ -180,8 +181,9 @@ article img {
 .card-info{
   display: block;
   min-height: 8em;
+  height: 100%;
   overflow: hidden;
-  max-width: 15rem; 
+  max-width: 19rem; 
 
 }
 article a {
