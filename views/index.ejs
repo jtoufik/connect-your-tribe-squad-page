@@ -19,16 +19,16 @@
 
         <div class="card-info">
           <!-- Naam member -->
-          <h4>Naam: <%= member.name %> <%= member.surname %></h4>
+          <p> Naam: <span><%= member.name %> <%= member.surname %> </span> </p>
 
           <!-- Haalt de github handle van een member uit de API op. Mocht een member zijn of haar githubhandle niet
             hebben ingevuld wordt deze vervangen met de tekst: Niet Ingesteld. -->
           <% if(member.gitHubHandle) { %>
             <p>
-              Git: <%= member.gitHubHandle %>
+              Git:<span> <%= member.gitHubHandle %></span>
             </p>
             <% } else { %>
-              <p><span>Git: Niet Ingesteld</span></p>
+              <p>Git:<span> Niet Ingesteld</span></p>
               <% } %>
         </div>
       </article>
