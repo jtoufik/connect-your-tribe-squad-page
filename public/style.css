@@ -26,9 +26,6 @@ body {
   background-attachment: fixed;
 }
 
-header{
-  
-}
 
 h1{
   display: flex;
@@ -38,7 +35,6 @@ h1{
   border: 1px solid var(--light-blue);
   border-radius: var(--rounded);
   box-shadow: -4px 4px 0px var(--light-blue);
-
 }
 
 
@@ -70,6 +66,8 @@ header > div{
   border-radius: var(--rounded);
   display: flex;
   padding: 0.5em 4em 0.5em 1em;
+  z-index: 1;
+  position: relative;
 }
 
 button{
@@ -145,7 +143,6 @@ header > section{
   margin: 0 auto;
   background-color: #1e3b52;
   border: 2px solid var(--very-dark-blue);
-  z-index:-1;
 }
 
   header > section > h3{
@@ -165,8 +162,14 @@ main{
   margin-top: 17em;
 }
 
-main > h2{
-  padding: .5em;
+h5{
+  font-size: 2em;
+  letter-spacing: .1em;
+  padding: 1em;
+  color: var(--very-dark-blue);
+  text-decoration: underline;
+  text-align: center;
+  margin: .5em;
 }
 
 main section {
@@ -180,7 +183,7 @@ main section {
 article {
   position: relative;
   min-width: 16rem;
-  width: 19rem;
+  width: 18rem;
   max-height: 27.5rem;
   padding: .5rem;
   text-align: center;
