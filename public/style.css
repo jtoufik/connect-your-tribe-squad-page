@@ -62,20 +62,43 @@ h3{
   margin: 0;
 }
 
-header{
-  height: 10em;
-  margin-bottom: 7em;
+
+header > div{
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--very-dark-blue);
+  border-radius: var(--rounded);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4em 0 1em;
+}
+
+button{
+  display: flex;
+  justify-content: flex-start;
+  all: unset;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(/assets/filter.png);
+  background-size: cover;
+  border-radius: var(--rounded);
+  border: solid 2px var(--light-blue);
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+button:hover{
+  transform: scale(1.2);
 }
 
 nav{
   display: flex;
   margin: 0 auto;
-  justify-content: center;
-  width: 80%;
-  background-color: var(--very-dark-blue);
-  border-radius: var(--rounded);
-
+  align-items: center;
 }
+
 
 ul{
   display: flex;
@@ -87,6 +110,10 @@ ul{
 
 ul> li{
   padding: 0 .7em;
+  transition: transform .2s;
+}
+ul> li:hover{
+  transform: scale(1.2);
 }
 
 ul> li> a{
@@ -103,6 +130,28 @@ ul> li> a:hover{
   background: var(--light-blue);
 }
 
+header > section{
+  width: 80%;
+  height: 10em;
+  position: relative;
+  bottom: 1em;
+  border-radius: var(--rounded);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0 auto;
+  background-color: #1e3b52;
+  border: 2px solid var(--very-dark-blue);
+  z-index:-1;
+}
+
+  header > section > h3{
+  color: white ;
+  font-size: 1.5em;
+}
+
+
+
+/* ----------------------------------------- M A I N --------------------------------------- */
 main{
   background-color: whitesmoke ;
   width: 80%;
@@ -259,7 +308,7 @@ article span{
   }
 
   header {
-    margin-bottom: 6.5em;
+    margin-bottom: 16.5em;
 }
 
 }
