@@ -130,7 +130,7 @@ li > a{
   color:  white;
   text-decoration: none;
   font-weight: bolder;
-  border: solid 3px var(--light-blue);
+  border: solid 2px var(--light-blue);
   padding: 0 .7rem;
   border-radius: var(--rounded);
 }
@@ -140,16 +140,24 @@ li > a:hover{
   background: var(--light-blue);
 }
 
-header > section{
+.filter-box{
   width: 80%;
+  height: 11.5em;
   position: relative;
-  bottom: 1em;
+  bottom: .5em;
   border-radius: var(--rounded);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   margin: 0 auto;
   background-color: #1e3b52;
   border: 2px solid var(--very-dark-blue);
+  transition: .4s ease-out;
+  overflow: hidden;
+}
+
+.filter-box.collapsed {
+  height: 0;
+  transition: .4s ease-in;
 }
 
   header > section > h3{
@@ -166,7 +174,7 @@ main{
   margin: 0 auto;
   padding: 0 2em 1.5em 2em;
   border-radius: var(--rounded);
-  margin-top: 17em;
+  margin-top: 17.5em;
 }
 
 h5{

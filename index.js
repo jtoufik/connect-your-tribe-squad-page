@@ -23,9 +23,28 @@ app.get('/', (request, response) => {
   })
 })
 
-// app.get('/members', (request, response) => {
-//   response.send('Joepie!!')
+// // Tijdelijke fake data
+// const skill = ['Enthusiast', 'Mash-up Artist', 'Inventor', 'Wizard'];
+// data.squad.members.forEach(function(member) {
+//   if (!member.skill) {
+//     // Pak een random skill en zet deze in de member
+//     member.skill = skill[Math.floor(Math.random() * skill.length)]
+//   }
 // })
+
+// app.get('/', function (req, res) {
+
+//   // deep copy 
+//   // fuld way 
+//   // const filtered = JSON.parse(JSON.stringify(data))
+//   const filtered = structuredClone(data)
+
+//   if (req.query.skill) {
+//     filtered.squad.members = filtered.squad.members.filter((member) => member.skill == req.query.skills)
+//   }
+//   res.render('index', filtered)
+// })
+
 
 // Stel het poortnummer in en start express
 app.set('port', process.env.PORT || 8000)
