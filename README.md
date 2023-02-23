@@ -30,7 +30,7 @@ Express.js is een NodeJS-webframework dat wordt gebruikt op de server-side van w
   
 **EJS (Templating language)**
 
-EJS is een templating language voor het genereren van HTML met JavaScript. Het zorgt ervoor dat ik HTML files kan renderen met JavaScript data. Ook kan  ik gebruik maken van partials om mijn HTML code zo DRY mogelijk te maken.
+EJS is een templating language voor het genereren van HTML met JavaScript. Het zorgt ervoor dat ik HTML files kan renderen met JavaScript data. Ook kan  ik gebruik maken van partials om mijn HTML code zo DRY mogelijk te maken Het is handig voor multipage websites waar bepaalde elementen herhaald worden. Denk aan een header of footer etc. 
 
 
 ## Licentie
