@@ -2,7 +2,8 @@
 
 # Tribe Squad Page
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-![image](https://user-images.githubusercontent.com/112856590/220868023-dd0299f4-36a1-4d3f-905b-63d532b207a2.png)
+
+<img width="1591" alt="Scherm­afbeelding 2023-02-23 om 11 02 25" src="https://user-images.githubusercontent.com/112856590/220876002-82e8ed0b-da76-4eaa-aad7-f187d4002533.png">
 
 
 ## Inhoudsopgave
