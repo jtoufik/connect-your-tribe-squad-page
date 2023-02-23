@@ -2,29 +2,34 @@
 
 # Tribe Squad Page
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
+![image](https://user-images.githubusercontent.com/112856590/220868023-dd0299f4-36a1-4d3f-905b-63d532b207a2.png)
+
 
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+Hier heb ik mijn squadpage ontworpen doormiddel met Node en data uit de whois.fdnd.nl API.
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
-## Installatie
+**Node JS (Server-side scripting)**
 
-## Gebruik
+  Node is een JavaScript runtime omgeving waarmee JavaScript buiten de browser kan worden uitgevoerd. Met Node js kun je gebruik maken van server side     scripting en command-line tools.
+  
+**Express JS (Framework)**
+  
+  Express Js is een Node js framework. Express helpt bij het verwerken van API requests en responses.
+  
+**EJS (Templating language)**
 
-## Bronnen
+  EJS is een templating language voor het genereren van HTML met JavaScript. Het zorgt ervoor dat ik HTML files kan renderen met JavaScript data. Ook kan   ik gebruik maken van partials om mijn HTML code zo DRY mogelijk te maken.
+
 
 ## Licentie
 
