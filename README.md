@@ -20,15 +20,16 @@ Hier heb ik mijn squadpage ontworpen doormiddel met Node en data uit de whois.fd
 
 **Node JS (Server-side scripting)**
 
-  Node is een JavaScript runtime omgeving waarmee JavaScript buiten de browser kan worden uitgevoerd. Met Node js kun je gebruik maken van server side     scripting en command-line tools.
+In dit project hebben we gewerkt met Node, dat is een JavaScript runtime omgeving waarmee JavaScript buiten de browser kan worden uitgevoerd. Met 
+Node.js heb ik aan de hand van scripting en command-line tools via de server-side kunnen laten draaien.    
   
 **Express JS (Framework)**
   
-  Express Js is een Node js framework. Express helpt bij het verwerken van API requests en responses.
+Express.js is een NodeJS-webframework dat wordt gebruikt op de server-side van websites en webapplicaties. Express heeft mij geholpen bij het verwerken van API requests en responses voor mijn squadpage.
   
 **EJS (Templating language)**
 
-  EJS is een templating language voor het genereren van HTML met JavaScript. Het zorgt ervoor dat ik HTML files kan renderen met JavaScript data. Ook kan   ik gebruik maken van partials om mijn HTML code zo DRY mogelijk te maken.
+EJS is een templating language voor het genereren van HTML met JavaScript. Het zorgt ervoor dat ik HTML files kan renderen met JavaScript data. Ook kan  ik gebruik maken van partials om mijn HTML code zo DRY mogelijk te maken.
 
 
 ## Licentie
